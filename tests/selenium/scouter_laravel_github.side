@@ -1,0 +1,55 @@
+{
+  "id": "c490a971-6f74-4f87-943d-126a5f349508",
+  "version": "2.0",
+  "name": "scouter_laravel",
+  "url": "http://localhost:8000",
+  "tests": [{
+    "id": "19c191d5-f17e-4e8b-a6eb-8afd64e08a4b",
+    "name": "test_scouter",
+    "commands": [{
+      "id": "dee97894-e187-4280-b31a-648ef10ee68a",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "da06fa04-1288-4149-968a-5ecaff6bbd49",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "872x1042",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "c1fb08e6-18b9-4eae-b756-07073e787930",
+      "comment": "",
+      "command": "click",
+      "target": "css=.mt-4",
+      "targets": [
+        ["css=.mt-4", "css:finder"],
+        ["xpath=//div/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "d9e49d4e-1003-4174-ad3d-b3100b2341fc",
+      "comment": "",
+      "command": "verifyText",
+      "target": "css=.card:nth-child(100) .card-text",
+      "targets": [
+        ["css=.card:nth-child(100) .card-text", "css:finder"],
+        ["xpath=//div[100]/div[2]/p", "xpath:position"]
+      ],
+      "value": "本文です。テキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト。\\nテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト。テキストテキストテキスト..."
+    }]
+  }],
+  "suites": [{
+    "id": "e1949f7c-b3f7-4b73-8dcb-eb6af527b7d2",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["19c191d5-f17e-4e8b-a6eb-8afd64e08a4b"]
+  }],
+  "urls": ["http://localhost:8000/"],
+  "plugins": []
+}
