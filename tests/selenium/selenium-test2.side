@@ -7,21 +7,45 @@
     "id": "887f25a0-7d85-45d3-9b99-0472799bbee7",
     "name": "selenium2-test",
     "commands": [{
-      "id": "a27ad705-b233-4745-af7a-aa3b9997f951",
+      "id": "da52f8fe-1930-40ef-95ad-9b11bc1f4701",
       "comment": "",
       "command": "open",
       "target": "/",
       "targets": [],
       "value": ""
     }, {
-      "id": "8ef08386-6801-4365-847b-bc46412d1093",
+      "id": "867778ea-4196-4791-a5c3-2282fda41315",
       "comment": "",
       "command": "setWindowSize",
       "target": "1328x1042",
       "targets": [],
       "value": ""
     }, {
-      "id": "41ab57eb-133f-4e76-b957-e03323e5bf0b",
+      "id": "f5dd0af6-c01c-4901-9eda-7704d1c66330",
+      "comment": "",
+      "command": "click",
+      "target": "css=.mb-4:nth-child(1)",
+      "targets": [
+        ["css=.mb-4:nth-child(1)", "css:finder"],
+        ["xpath=//div/div/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "b3f66d62-5220-46c6-9b8e-150e4fbd2213",
+      "comment": "",
+      "command": "verifyText",
+      "target": "linkText=投稿を新規作成する",
+      "targets": [
+        ["linkText=投稿を新規作成する", "linkText"],
+        ["css=.btn", "css:finder"],
+        ["xpath=//a[contains(text(),'投稿を新規作成する')]", "xpath:link"],
+        ["xpath=//a[@href='http://localhost:8000/posts/create']", "xpath:href"],
+        ["xpath=//div/div/a", "xpath:position"],
+        ["xpath=//a[contains(.,'投稿を新規作成する')]", "xpath:innerText"]
+      ],
+      "value": "投稿を新規作成する"
+    }, {
+      "id": "8952c0fd-2b61-4fcc-a0e0-2afe658e0b4c",
       "comment": "",
       "command": "click",
       "target": "linkText=投稿を新規作成する",
@@ -35,7 +59,7 @@
       ],
       "value": ""
     }, {
-      "id": "820a11a0-617c-4b10-a790-74d3db606ef6",
+      "id": "d67a652e-492f-4f31-81f0-605c9493159b",
       "comment": "",
       "command": "click",
       "target": "id=title",
@@ -48,7 +72,7 @@
       ],
       "value": ""
     }, {
-      "id": "c798cb91-2624-4166-bd88-6a6d77ed1bc6",
+      "id": "62599af5-adab-41d5-aa94-0f19de496382",
       "comment": "",
       "command": "type",
       "target": "id=title",
@@ -59,9 +83,9 @@
         ["xpath=//input[@id='title']", "xpath:attributes"],
         ["xpath=//div/input", "xpath:position"]
       ],
-      "value": "aaa"
+      "value": "scouterのテスト"
     }, {
-      "id": "1721931d-850f-42d0-9b65-993fffd4d1dc",
+      "id": "be7087b2-7ffc-444c-a60f-5f585c11ad16",
       "comment": "",
       "command": "click",
       "target": "id=body",
@@ -74,7 +98,7 @@
       ],
       "value": ""
     }, {
-      "id": "01c22b32-d28a-430e-bf79-a025d0b428b7",
+      "id": "f5d43639-8e83-461f-b8e6-41ac0b02fa1c",
       "comment": "",
       "command": "type",
       "target": "id=body",
@@ -85,9 +109,31 @@
         ["xpath=//textarea[@id='body']", "xpath:attributes"],
         ["xpath=//textarea", "xpath:position"]
       ],
-      "value": "PHP上級編だよ！"
+      "value": "PHP上級編"
     }, {
-      "id": "6101abb8-6411-4183-9a04-1e4a4a3b6ab5",
+      "id": "084560eb-33e6-40a3-b563-57397a102c02",
+      "comment": "",
+      "command": "click",
+      "target": "css=.h5",
+      "targets": [
+        ["css=.h5", "css:finder"],
+        ["xpath=//h1", "xpath:position"],
+        ["xpath=//h1[contains(.,'投稿の新規作成')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "c907ea8c-d7ae-4ddf-84de-abe1c2290b7e",
+      "comment": "",
+      "command": "verifyText",
+      "target": "css=.h5",
+      "targets": [
+        ["css=.h5", "css:finder"],
+        ["xpath=//h1", "xpath:position"],
+        ["xpath=//h1[contains(.,'投稿の新規作成')]", "xpath:innerText"]
+      ],
+      "value": "投稿の新規作成"
+    }, {
+      "id": "fa574601-01df-4861-a51e-0af0f7dfd61e",
       "comment": "",
       "command": "click",
       "target": "css=.btn-primary",
@@ -98,6 +144,47 @@
         ["xpath=//button[contains(.,'投稿する')]", "xpath:innerText"]
       ],
       "value": ""
+    }, {
+      "id": "645c2cd0-5269-4b91-9b3b-ec7d8142f2eb",
+      "comment": "",
+      "command": "click",
+      "target": "css=.card:nth-child(2) > .card-header",
+      "targets": [
+        ["css=.card:nth-child(2) > .card-header", "css:finder"],
+        ["xpath=//div[2]/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "b1dd3866-04e5-4986-a233-21e35a947903",
+      "comment": "",
+      "command": "verifyText",
+      "target": "css=.card:nth-child(2) > .card-header",
+      "targets": [
+        ["css=.card:nth-child(2) > .card-header", "css:finder"],
+        ["xpath=//div[2]/div", "xpath:position"]
+      ],
+      "value": "scouterのテスト"
+    }, {
+      "id": "c38921db-3964-4497-8930-8808d90841a3",
+      "comment": "",
+      "command": "click",
+      "target": "css=.card:nth-child(2) > .card-body",
+      "targets": [
+        ["css=.card:nth-child(2) > .card-body", "css:finder"],
+        ["xpath=//div[2]/div[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "65f8cfda-2949-4960-87f9-d92f77e2580f",
+      "comment": "",
+      "command": "verifyText",
+      "target": "css=.card:nth-child(2) .card-text",
+      "targets": [
+        ["css=.card:nth-child(2) .card-text", "css:finder"],
+        ["xpath=//p", "xpath:position"],
+        ["xpath=//p[contains(.,'PHP上級編')]", "xpath:innerText"]
+      ],
+      "value": "PHP上級編"
     }]
   }],
   "suites": [{
