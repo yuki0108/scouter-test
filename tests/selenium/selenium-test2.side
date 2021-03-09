@@ -1,0 +1,113 @@
+{
+  "id": "2ffdfaa1-44d9-4e94-a583-f906d0c1ad31",
+  "version": "2.0",
+  "name": "selenium-test2",
+  "url": "http://localhost:8000",
+  "tests": [{
+    "id": "887f25a0-7d85-45d3-9b99-0472799bbee7",
+    "name": "selenium2-test",
+    "commands": [{
+      "id": "a27ad705-b233-4745-af7a-aa3b9997f951",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "8ef08386-6801-4365-847b-bc46412d1093",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1328x1042",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "41ab57eb-133f-4e76-b957-e03323e5bf0b",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=投稿を新規作成する",
+      "targets": [
+        ["linkText=投稿を新規作成する", "linkText"],
+        ["css=.btn", "css:finder"],
+        ["xpath=//a[contains(text(),'投稿を新規作成する')]", "xpath:link"],
+        ["xpath=//a[@href='http://localhost:8000/posts/create']", "xpath:href"],
+        ["xpath=//div/div/a", "xpath:position"],
+        ["xpath=//a[contains(.,'投稿を新規作成する')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "820a11a0-617c-4b10-a790-74d3db606ef6",
+      "comment": "",
+      "command": "click",
+      "target": "id=title",
+      "targets": [
+        ["id=title", "id"],
+        ["name=title", "name"],
+        ["css=#title", "css:finder"],
+        ["xpath=//input[@id='title']", "xpath:attributes"],
+        ["xpath=//div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "c798cb91-2624-4166-bd88-6a6d77ed1bc6",
+      "comment": "",
+      "command": "type",
+      "target": "id=title",
+      "targets": [
+        ["id=title", "id"],
+        ["name=title", "name"],
+        ["css=#title", "css:finder"],
+        ["xpath=//input[@id='title']", "xpath:attributes"],
+        ["xpath=//div/input", "xpath:position"]
+      ],
+      "value": "aaa"
+    }, {
+      "id": "1721931d-850f-42d0-9b65-993fffd4d1dc",
+      "comment": "",
+      "command": "click",
+      "target": "id=body",
+      "targets": [
+        ["id=body", "id"],
+        ["name=body", "name"],
+        ["css=#body", "css:finder"],
+        ["xpath=//textarea[@id='body']", "xpath:attributes"],
+        ["xpath=//textarea", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "01c22b32-d28a-430e-bf79-a025d0b428b7",
+      "comment": "",
+      "command": "type",
+      "target": "id=body",
+      "targets": [
+        ["id=body", "id"],
+        ["name=body", "name"],
+        ["css=#body", "css:finder"],
+        ["xpath=//textarea[@id='body']", "xpath:attributes"],
+        ["xpath=//textarea", "xpath:position"]
+      ],
+      "value": "PHP上級編だよ！"
+    }, {
+      "id": "6101abb8-6411-4183-9a04-1e4a4a3b6ab5",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn-primary",
+      "targets": [
+        ["css=.btn-primary", "css:finder"],
+        ["xpath=//button[@type='submit']", "xpath:attributes"],
+        ["xpath=//button", "xpath:position"],
+        ["xpath=//button[contains(.,'投稿する')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "648a05b4-bb3c-40e5-959d-95b68b63357c",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["887f25a0-7d85-45d3-9b99-0472799bbee7"]
+  }],
+  "urls": ["http://localhost:8000/"],
+  "plugins": []
+}
